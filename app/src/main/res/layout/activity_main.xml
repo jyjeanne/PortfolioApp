@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#ffdfeaf1">
+
+    <TextView android:text="@string/my_title" android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:layout_marginLeft="60dip"
+        android:layout_marginRight="60dip"
+        android:layout_alignParentTop="true"
+        android:textSize="20sp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/button"
+        android:layout_centerInParent="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#ff0063c5" />
+
+    <Button
+        android:layout_marginLeft="85dip"
+        android:layout_marginRight="85dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/media_streamer"
+        android:id="@+id/button"
+        android:layout_below="@+id/textView"
+        android:background="#fff08c35"
+        android:layout_marginTop="30dip"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#ffffffff"
+        android:onClick="sendMessageMedia"
+        android:nestedScrollingEnabled="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/super_duo1"
+        android:id="@+id/button2"
+        android:layout_marginTop="15dip"
+        android:layout_below="@+id/button"
+        android:background="#fff08c35"
+        android:layout_alignEnd="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:onClick="sendMessageScore"
+        android:textColor="#ffffffff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/super_duo2"
+        android:id="@+id/button3"
+        android:layout_marginTop="15dip"
+        android:background="#fff08c35"
+        android:layout_below="@+id/button2"
+        android:layout_alignStart="@+id/button2"
+        android:layout_alignEnd="@+id/button2"
+        android:onClick="sendMessageLibrary"
+        android:textColor="#ffffffff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ant_terminator"
+        android:id="@+id/button4"
+        android:layout_marginTop="15dip"
+        android:layout_below="@+id/button3"
+        android:layout_alignStart="@+id/button3"
+        android:background="#fff08c35"
+        android:layout_alignEnd="@+id/button3"
+        android:onClick="sendMessageBuild"
+        android:textColor="#ffffffff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/materialize"
+        android:id="@+id/button5"
+        android:layout_marginTop="15dip"
+        android:background="#fff08c35"
+        android:layout_below="@+id/button4"
+        android:layout_alignStart="@+id/button6"
+        android:layout_alignEnd="@+id/button4"
+        android:textColor="#ffffffff"
+        android:onClick="sendMessageReader"
+        android:nestedScrollingEnabled="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/capstone"
+        android:id="@+id/button6"
+        android:layout_marginTop="15dip"
+        android:background="#ffd83256"
+        android:layout_below="@+id/button5"
+        android:layout_alignStart="@+id/button4"
+        android:layout_alignEnd="@+id/button4"
+        android:textColor="#ffffffff"
+        android:onClick="sendMessageCapstone" />
+
+</RelativeLayout>
